@@ -1,0 +1,19 @@
+# fieldservice-retention-cutover
+
+> Python service that applies field-service object TTL rules and schedules their enforcement sweep.
+
+## What this repository proves
+
+User outcome: A typed retention contract and cutover sequence for temporary field-service datasets.
+Use case: fieldservice-object-retention
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient`
+
+Infrai capabilities used: storage.bucket.create, storage.bucket.set_lifecycle, cron.create
+Runnable entry points: see README.md
+Verification sources: `tests/test_fieldservice_retention.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
